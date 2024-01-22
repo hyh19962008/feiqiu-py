@@ -15,7 +15,7 @@ def deal_msg(commend, option=""):
 
 def send_msg(msg, dest_ip):
     """发送数据指定电脑的飞秋中"""
-    CoreData.udp_socket.sendto(msg.encode("utf-8"), (dest_ip, CoreData.FeiQ_port))
+    CoreData.udp_socket.sendto(msg.encode("gb2312"), (dest_ip, CoreData.FeiQ_port))
 
 
 def send_online_msg():
